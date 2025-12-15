@@ -652,7 +652,7 @@ def draw_stats():
         # Forwarded queries
         y_offset += 25
         draw.text((10, y_offset), "Forward:", font=font_medium, fill=WHITE)
-        draw.text((100, y_offset), format_number(q["forwarded"]), font=font_medium, fill=ORANGE)
+        draw.text((100, y_offset), format_number(q["forwarded"]), font=font_medium, fill=WHITE)
         
         # Active/total clients
         y_offset += 25
@@ -662,7 +662,7 @@ def draw_stats():
         # Blocklist size
         y_offset += 25
         draw.text((10, y_offset), "Blocklist:", font=font_medium, fill=WHITE)
-        draw.text((100, y_offset), format_number(g["domains_being_blocked"]), font=font_medium, fill=RED)
+        draw.text((100, y_offset), format_number(g["domains_being_blocked"]), font=font_medium, fill=WHITE)
         
         pihole_ok = True
     else:
