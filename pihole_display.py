@@ -640,7 +640,7 @@ def draw_stats():
         draw.text((10, y_offset), "Blocked:", font=font_medium, fill=WHITE)
         blocked_pct = q['percent_blocked']
         # Color based on block percentage (high blocking might indicate issues)
-        blocked_color = GREEN if blocked_pct < 30 else (YELLOW if blocked_pct < 50 else ORANGE)
+        blocked_color = get_status_color(blocked_pct, 30, 50)
         draw.text((100, y_offset), format_number(q["blocked"]), font=font_medium, fill=blocked_color)
         draw.text((160, y_offset), f"({blocked_pct:.1f}%)", font=font_small, fill=blocked_color)
         
