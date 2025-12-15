@@ -1,0 +1,35 @@
+### Python bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+### Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+### Environment / secrets
+.env
+*.env
+
+### Logs & runtime files
+*.log
+*.pid
+
+### OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### IDE / tooling
+.vscode/
+.idea/
+*.code-workspace
+
+### Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+
+
