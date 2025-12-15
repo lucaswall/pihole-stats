@@ -1,3 +1,6 @@
+
+.lgd*
+
 ### Python bytecode / cache
 __pycache__/
 *.py[cod]
@@ -31,5 +34,3 @@ desktop.ini
 build/
 dist/
 *.egg-info/
-
-
